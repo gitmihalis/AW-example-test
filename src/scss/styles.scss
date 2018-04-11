@@ -1,0 +1,80 @@
+// ============================== Fonts ========================================== 
+@import url('https://fonts.googleapis.com/css?family=Hind+Siliguri|Archivo+Black');
+// ============================== variable overides ============================== 
+$theme-colors: (
+  "primary":    #0097e6,
+  "success":    #44bd32,
+  "info":       #0097e6,
+  "warning":    #e84118,
+  "danger":     #e84118,
+  "light":      #f5f6fa,
+  "dark":       #353b48
+);
+$darkred: #c23616;
+$headings-font-family:  "Archivo Black";
+$font-family-sans-serif: "Hind Siliguri";
+$btn-border-radius: 0;
+$card-border-radius: 0;
+$card-inner-border-radius: 0;
+// $btn-border-radius-lg:        $border-radius-lg !default;
+// $btn-border-radius-sm:        $border-radius-sm !default;
+
+// ============================== Bootstrap SASS  ================================
+@import "./node_modules/bootstrap/scss/bootstrap.scss";
+
+// ============================== Custom  ========================================
+
+// = = = Carousel = = = 
+.carousel-item {
+	h1,h2,h3,h4,h5 {
+		border: 2px solid $light;
+		padding: .1em .1em;
+	}
+	&:nth-child(3) {
+		h1, h2, h3, h4, h5 {
+			border: 2px solid $dark;
+			color: $dark !important;
+		}
+		p {
+			display: inline-block;
+		}
+	}
+}
+
+// = = = Cards = = = 
+.card {
+	p {
+		color: $darkred;
+
+		svg {
+			text-shadow: 2px 2px 3px $dark;
+		}
+	}
+	button {
+		word-wrap: break-word;
+		white-space: normal;
+	}
+}
+.card-header {
+  background-color: $darkred;
+  .btn {
+  	color: $light;
+  }
+}
+
+// = = = General = = = 
+.btn {
+	@extend .text-uppercase
+}
+.shadow {
+  filter: drop-shadow( 5px 5px 2px lighten($dark, 20%) );
+}
+
+.description {
+	text-align: center;
+	width: 100%;
+	font-size: .5em;
+	background-color: $dark;
+	color: $light;
+	padding: .1em 2em;
+}

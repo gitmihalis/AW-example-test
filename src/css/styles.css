@@ -6042,12 +6042,7 @@ a.text-dark:hover, a.text-dark:focus {
 
 .carousel .carousel-item h1, .carousel .carousel-item h2, .carousel .carousel-item h3, .carousel .carousel-item h4, .carousel .carousel-item h5, .carousel .carousel-item h6 {
   font-family: "Open Sans" !important;
-  padding: .2em;
-  border: 2px solid #343a40;
   color: #343a40 !important; }
-
-.carousel .carousel-item:nth-child(3) h1, .carousel .carousel-item:nth-child(3) h2, .carousel .carousel-item:nth-child(3) h3, .carousel .carousel-item:nth-child(3) h4, .carousel .carousel-item:nth-child(3) h5 {
-  border: none; }
 
 .card .card-icon {
   color: #007bff; }
@@ -6063,6 +6058,10 @@ a.text-dark:hover, a.text-dark:focus {
 
 .details {
   background-color: #f8f9fa; }
+
+footer {
+  height: 5em;
+  font-size: 1em; }
 
 .shadow {
   filter: drop-shadow(3px 3px 2px #b2bac1); }
@@ -6080,13 +6079,43 @@ a.text-dark:hover, a.text-dark:focus {
   padding: 1em 2em;
   color: #0062cc; }
 
-footer {
-  height: 5em; }
+.carousel h1 {
+  position: absolute;
+  top: 0em;
+  left: 10px;
+  right: 10px;
+  font-size: 1.3em; }
+
+.carousel a {
+  display: none; }
+
+.description {
+  font-size: 1em; }
+
+@media (min-width: 576px) {
+  footer {
+    font-size: 1.5em; }
+  .carousel h1 {
+    position: absolute;
+    top: -2.3em;
+    left: 10px;
+    right: 10px;
+    font-size: 2em; }
+  .carousel a {
+    display: inline-block; } }
 
 @media (min-width: 768px) {
-  .description {
-    font-size: 2em; } }
+  .carousel h1 {
+    position: absolute;
+    top: -2.3em;
+    left: 10px;
+    right: 10px;
+    font-size: 3em; } }
 
 @media (min-width: 992px) {
-  .description {
-    font-size: 3em; } }
+  .carousel h1 {
+    position: absolute;
+    top: -2.3em;
+    left: 10px;
+    right: 10px;
+    font-size: 5em; } }

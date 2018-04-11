@@ -25,25 +25,15 @@ $card-inner-border-radius: 0;
 // * {
 // 	border: 1px solid red;
 // }
+
 // = = = Carousel = = =
 .carousel {
+
 	.carousel-item {
 
 		h1,h2,h3,h4,h5,h6 {
 			font-family: "Open Sans" !important;
-			padding: .2em;
-			border: 2px solid $dark;
-			color: $dark !important;		
-		}
-
-		&:nth-child(3) {
-			h1, h2, h3, h4, h5 {
-				border: none;
-			}
-
-			p {
-				// display: inline-block;
-			}
+			color: $dark !important;
 		}
 	}
 }
@@ -71,7 +61,13 @@ $card-inner-border-radius: 0;
 	background-color: $light;
 }
 
-// = = = General = = = 
+// = = = Footer = = =
+footer {
+	height: 5em;
+	font-size: 1em;
+}
+
+// = = = Utilities /  Helper = = = 
 .btn {
 	@extend .text-uppercase
 }
@@ -81,6 +77,7 @@ $card-inner-border-radius: 0;
 .darken {
 	color: $dark !important;
 }
+
 .description {
 	text-align: center;
 	width: 100%;
@@ -92,28 +89,70 @@ $card-inner-border-radius: 0;
 	color: darken($primary, 10%);
 }
 
-footer {
-	height: 5em;
-
-}
 
 // = = = MEDIA QUERIES = = = 
-@include media-breakpoint-up(xs) {  }
+// Extra small devices (portrait phones, less than 576px)
+@include media-breakpoint-up(xs) {
+	.carousel {
+		h1 {
+			position: absolute;
+			top: 0em;
+			left: 10px;
+			right: 10px;
+			font-size: 1.3em;
+		}
 
-@include media-breakpoint-up(sm) { 
+		a {
+			display: none;
+		}
+
+	}
+
+	.description {
+		font-size: 1em;
+	}
+
 }
+@include media-breakpoint-up(sm) {
+	footer {
+		font-size: 1.5em;
+	}
 
+	.carousel {
+		h1 {
+			position: absolute;
+			top: -2.3em;
+			left: 10px;
+			right: 10px;
+			font-size: 2em;
+		}
+
+		a {
+			display: inline-block;
+		}
+ 	}		
+}
 @include media-breakpoint-up(md) {
-	.description {
-		font-size: 2em; 
-	}
+	.carousel {
+		h1 {
+			position: absolute;
+			top: -2.3em;
+			left: 10px;
+			right: 10px;
+			font-size: 3em;
+		}
+ 	}	
 }
-@include media-breakpoint-up(lg) { 
-	.description {
-		font-size: 3em; 
-	}
+@include media-breakpoint-up(lg) {
+	.carousel {
+		h1 {
+			position: absolute;
+			top: -2.3em;
+			left: 10px;
+			right: 10px;
+			font-size: 5em;
+		}
+ 	}
 }
-@include media-breakpoint-up(xl) {  }
-
-// Example usage:
+@include media-breakpoint-up(xl) {}
 @include media-breakpoint-up(sm) {}

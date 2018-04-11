@@ -15,6 +15,7 @@ $headings-font-weight:    700;
 $btn-border-radius: 0;
 $card-border-radius: 0;
 $card-inner-border-radius: 0;
+$carousel-control-color: dark;
 
 
 // ============================== Bootstrap SASS  ================================
@@ -35,6 +36,12 @@ $card-inner-border-radius: 0;
 			font-family: "Open Sans" !important;
 			color: $dark !important;
 		}
+	}
+
+	a[href="#carousel-hero"]{
+		color: $dark !important;
+		position: absolute;
+		top: 120px;
 	}
 }
 
@@ -81,7 +88,7 @@ footer {
 .description {
 	text-align: center;
 	width: 100%;
-	font-size: 1em;
+	font-size: 2em;
 	font-weight: 900;
 	background-color: $yellow;
 	color: $light;
@@ -142,6 +149,11 @@ footer {
 			font-size: 3em;
 		}
  	}	
+
+ 	.description {
+ 		font-size: 2em;
+ 	}
+
 }
 @include media-breakpoint-up(lg) {
 	.carousel {

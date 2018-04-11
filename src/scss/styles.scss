@@ -22,27 +22,36 @@ $card-inner-border-radius: 0;
 
 // ============================== Custom  ========================================
 
-// = = = Carousel = = = 
-.carousel-item {
-	h1,h2,h3,h4,h5,h6 {
-		font-family: "Open Sans" !important;
-		padding: .2em;
-		border: 2px solid $dark;
-		color: $dark !important;		
-	}
-	&:nth-child(3) {
-		h1, h2, h3, h4, h5 {
-			border: none;
+// * {
+// 	border: 1px solid red;
+// }
+// = = = Carousel = = =
+.carousel {
+	.carousel-item {
+
+		h1,h2,h3,h4,h5,h6 {
+			font-family: "Open Sans" !important;
+			padding: .2em;
+			border: 2px solid $dark;
+			color: $dark !important;		
 		}
-		p {
-			display: inline-block;
+
+		&:nth-child(3) {
+			h1, h2, h3, h4, h5 {
+				border: none;
+			}
+
+			p {
+				// display: inline-block;
+			}
 		}
 	}
 }
 
+
 // = = = Cards = = = 
 .card {
-	p {
+	.card-icon {
 		color: $primary;
 	}
 	button {
@@ -75,10 +84,36 @@ $card-inner-border-radius: 0;
 .description {
 	text-align: center;
 	width: 100%;
-	font-size: .8em;
+	font-size: 1em;
 	font-weight: 900;
 	background-color: $yellow;
 	color: $light;
-	padding: .5em 2em;
+	padding: 1em 2em;
 	color: darken($primary, 10%);
 }
+
+footer {
+	height: 5em;
+
+}
+
+// = = = MEDIA QUERIES = = = 
+@include media-breakpoint-up(xs) {  }
+
+@include media-breakpoint-up(sm) { 
+}
+
+@include media-breakpoint-up(md) {
+	.description {
+		font-size: 2em; 
+	}
+}
+@include media-breakpoint-up(lg) { 
+	.description {
+		font-size: 3em; 
+	}
+}
+@include media-breakpoint-up(xl) {  }
+
+// Example usage:
+@include media-breakpoint-up(sm) {}

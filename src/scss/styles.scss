@@ -57,6 +57,11 @@ $card-inner-border-radius: 0;
   }
 }
 
+// = = = Detail Section = = =
+.details {
+	background-color: $light;
+}
+
 // = = = General = = = 
 .btn {
 	@extend .text-uppercase

@@ -6064,6 +6064,9 @@ a.text-dark:hover, a.text-dark:focus {
   .card-header .btn {
     color: #f8f9fa; }
 
+.details {
+  background-color: #f8f9fa; }
+
 .shadow {
   filter: drop-shadow(3px 3px 2px #b2bac1); }
 

@@ -6056,6 +6056,9 @@ a.text-dark:hover, a.text-dark:focus {
   word-wrap: break-word;
   white-space: normal; }
 
+.card h5.card-title {
+  text-align: center; }
+
 .card-header {
   background-color: #c23616; }
   .card-header .btn {
@@ -6117,7 +6120,9 @@ footer {
     right: 10px;
     font-size: 3em; }
   .description {
-    font-size: 2em; } }
+    font-size: 2em; }
+  #icons-box h5:nth-child(1) {
+    text-align: left !important; } }
 
 @media (min-width: 992px) {
   .carousel h1 {
@@ -6125,4 +6130,6 @@ footer {
     top: -2.3em;
     left: 10px;
     right: 10px;
-    font-size: 5em; } }
+    font-size: 5em; }
+  #icons-box h5:nth-child(1) {
+    text-align: center !important; } }

@@ -48,19 +48,28 @@ $carousel-control-color: dark;
 
 // = = = Cards = = = 
 .card {
+
 	.card-icon {
 		color: $primary;
 	}
+
 	button {
 		word-wrap: break-word;
 		white-space: normal;
 	}
+
+	h5.card-title {
+  	text-align: center;
+  }
 }
+
 .card-header {
   background-color: $darkred;
+
   .btn {
   	color: $light;
   }
+
 }
 
 // = = = Detail Section = = =
@@ -99,7 +108,7 @@ footer {
 
 // = = = MEDIA QUERIES = = = 
 // Extra small devices (portrait phones, less than 576px)
-@include media-breakpoint-up(xs) {
+@include media-breakpoint-up(xs) { // ===============================
 	.carousel {
 		h1 {
 			position: absolute;
@@ -112,20 +121,23 @@ footer {
 		a {
 			display: none;
 		}
-
 	}
 
 	.description {
 		font-size: 1em;
 	}
-
 }
-@include media-breakpoint-up(sm) {
+
+
+
+@include media-breakpoint-up(sm) { // ===============================
+
 	footer {
 		font-size: 1.5em;
 	}
 
 	.carousel {
+
 		h1 {
 			position: absolute;
 			top: -2.3em;
@@ -139,8 +151,12 @@ footer {
 		}
  	}		
 }
-@include media-breakpoint-up(md) {
+
+
+
+@include media-breakpoint-up(md) { // ===============================
 	.carousel {
+
 		h1 {
 			position: absolute;
 			top: -2.3em;
@@ -154,9 +170,16 @@ footer {
  		font-size: 2em;
  	}
 
+ 	#icons-box {
+ 		h5:nth-child(1) {
+ 			text-align: left !important;
+ 		}
+ 	} 	
+
 }
-@include media-breakpoint-up(lg) {
+@include media-breakpoint-up(lg) { // ===============================
 	.carousel {
+
 		h1 {
 			position: absolute;
 			top: -2.3em;
@@ -165,6 +188,13 @@ footer {
 			font-size: 5em;
 		}
  	}
+ 	#icons-box {
+ 		h5:nth-child(1) {
+ 			text-align: center !important;
+ 		}
+ 	} 	
+
+
 }
-@include media-breakpoint-up(xl) {}
-@include media-breakpoint-up(sm) {}
+@include media-breakpoint-up(xl) {} // ===============================
+@include media-breakpoint-up(sm) {} // ===============================

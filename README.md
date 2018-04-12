@@ -9,9 +9,9 @@ Bootstrap 4 sample page design
 
 To evaluate this example, clone the repositor.
 
-cd into the directory 
-
 ` git clone git@github.com:gitmihalis/AW-example-test.git`
+
+cd into the directory 
 
 install the dependencies and run the gulp file.
 

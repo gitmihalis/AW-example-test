@@ -1,110 +1,15 @@
-// ============================== Fonts ========================================== 
-@import url('https://fonts.googleapis.com/css?family=Open+Sans');
-@import url('https://fonts.googleapis.com/css?family=Montserrat:700');
-
-// ============================== variable overides ============================== 
-$theme-colors: (
-  "primary":    #4183D7,
-  "light":      #f5f6fa,
-  "dark":       #353b48
-);
-$darkred: #c23616;
-$font-family-sans-serif: "Open Sans";
-$headings-font-family:   "Montserrat";
-$headings-font-weight:    700;
-$btn-border-radius: 0;
-$card-border-radius: 0;
-$card-inner-border-radius: 0;
-$carousel-control-color: dark;
-
-
-// ============================== Bootstrap SASS  ================================
-@import "./node_modules/bootstrap/scss/bootstrap.scss";
+@import './variables';
 
 // ============================== Custom  ========================================
-
-
-// = = = Carousel = = =
-.carousel {
-
-	.carousel-item {
-
-		h1,h2,h3,h4,h5,h6 {
-			font-family: "Open Sans" !important;
-			color: $dark !important;
-		}
-	}
-
-	a[href="#carousel-hero"]{
-		color: $dark !important;
-		position: absolute;
-		top: 120px;
-	}
-}
-
-
-// = = = Cards = = = 
-.card {
-
-	.card-icon {
-		color: $primary;
-	}
-
-	button {
-		word-wrap: break-word;
-		white-space: normal;
-	}
-
-	h5.card-title {
-  	text-align: center;
-  }
-}
-
-.card-header {
-  background-color: $darkred;
-
-  .btn {
-  	color: $light;
-  }
-
-}
-
-// = = = Detail Section = = =
-.details {
-	background-color: $light;
-}
-
-// = = = Footer = = =
-footer {
-	height: 5em;
-	font-size: 1em;
-}
-
-// = = = Utilities /  Helper = = = 
-.btn {
-	@extend .text-uppercase
-}
-.shadow {
-  filter: drop-shadow( 3px 3px 2px lighten($dark, 50%) );
-}
-.darken {
-	color: $dark !important;
-}
-
-.description {
-	text-align: center;
-	width: 100%;
-	font-size: 2em;
-	font-weight: 900;
-	background-color: $yellow;
-	color: $light;
-	padding: 1em 2em;
-	color: darken($primary, 10%);
-}
+@import './carousel';
+@import './card';
+@import './detail';
+@import './footer';
+@import './common';
+@import './description';
 
 
 // = = = MEDIA QUERIES = = = 
-// Extra small devices (portrait phones, less than 576px)
 @include media-breakpoint-up(xs) { // ===============================
 	.carousel {
 		h1 {

@@ -1,0 +1,13 @@
+/* common */
+
+.btn {
+	@extend .text-uppercase
+}
+
+.shadow {
+  filter: drop-shadow( 3px 3px 2px lighten($dark, 50%) );
+}
+
+.darken {
+	color: $dark !important;
+}

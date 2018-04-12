@@ -6040,6 +6040,7 @@ a.text-dark:hover, a.text-dark:focus {
   .table-bordered td {
     border: 1px solid #ddd !important; } }
 
+/* Carousel Component */
 .carousel .carousel-item h1, .carousel .carousel-item h2, .carousel .carousel-item h3, .carousel .carousel-item h4, .carousel .carousel-item h5, .carousel .carousel-item h6 {
   font-family: "Open Sans" !important;
   color: #343a40 !important; }
@@ -6049,6 +6050,7 @@ a.text-dark:hover, a.text-dark:focus {
   position: absolute;
   top: 120px; }
 
+/* Card */
 .card .card-icon {
   color: #007bff; }
 
@@ -6064,19 +6066,23 @@ a.text-dark:hover, a.text-dark:focus {
   .card-header .btn {
     color: #f8f9fa; }
 
+/* Detail Section */
 .details {
   background-color: #f8f9fa; }
 
+/* Footer */
 footer {
   height: 5em;
   font-size: 1em; }
 
+/* common */
 .shadow {
   filter: drop-shadow(3px 3px 2px #b2bac1); }
 
 .darken {
   color: #343a40 !important; }
 
+/* Description Banner*/
 .description {
   text-align: center;
   width: 100%;

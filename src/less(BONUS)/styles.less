@@ -1,0 +1,102 @@
+@import './variables';
+
+// ============================== Custom  ========================================
+@import './carousel';
+@import './card';
+@import './detail';
+@import './footer';
+@import './common';
+@import './description';
+
+
+// = = = MEDIA QUERIES = = = 
+@include media-breakpoint-up(xs) { // ===============================
+	.carousel {
+		h1 {
+			position: absolute;
+			top: 0em;
+			left: 10px;
+			right: 10px;
+			font-size: 1.3em;
+		}
+
+		a {
+			display: none;
+		}
+	}
+
+	.description {
+		font-size: 1em;
+	}
+}
+
+
+
+@include media-breakpoint-up(sm) { // ===============================
+
+	footer {
+		font-size: 1.5em;
+	}
+
+	.carousel {
+
+		h1 {
+			position: absolute;
+			top: -2.3em;
+			left: 10px;
+			right: 10px;
+			font-size: 2em;
+		}
+
+		a {
+			display: inline-block;
+		}
+ 	}		
+}
+
+
+
+@include media-breakpoint-up(md) { // ===============================
+	.carousel {
+
+		h1 {
+			position: absolute;
+			top: -2.3em;
+			left: 10px;
+			right: 10px;
+			font-size: 3em;
+		}
+ 	}	
+
+ 	.description {
+ 		font-size: 2em;
+ 	}
+
+ 	#icons-box {
+ 		h5:nth-child(1) {
+ 			text-align: left !important;
+ 		}
+ 	} 	
+
+}
+@include media-breakpoint-up(lg) { // ===============================
+	.carousel {
+
+		h1 {
+			position: absolute;
+			top: -2.3em;
+			left: 10px;
+			right: 10px;
+			font-size: 5em;
+		}
+ 	}
+ 	#icons-box {
+ 		h5:nth-child(1) {
+ 			text-align: center !important;
+ 		}
+ 	} 	
+
+
+}
+@include media-breakpoint-up(xl) {} // ===============================
+@include media-breakpoint-up(sm) {} // ===============================

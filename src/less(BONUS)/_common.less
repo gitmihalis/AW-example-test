@@ -1,0 +1,18 @@
+/* common */
+.uppercase {
+	& {
+		text-transform: uppercase;
+	}
+}
+
+.btn {
+	.uppercase();
+}
+
+.shadow {
+  filter: drop-shadow( 3px 3px 2px lighten(@dark, 50%) );
+}
+
+.darken {
+	color: @dark !important;
+}
